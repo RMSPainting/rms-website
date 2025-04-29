@@ -1,23 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>RMS Painting and Home Services</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <style>
-    body { font-family: 'Poppins', sans-serif; margin:0; padding:0; background:#fff; color:#333; scroll-behavior: smooth; }
-    header img { max-height: 180px; margin: 20px auto; display: block; }
-    nav { background: #3e554b; text-align: center; }
-    nav a { color: white; margin: 0 15px; text-decoration: none; padding: 14px 0; display: inline-block; transition: 0.3s; }
-    nav a:hover { color: #f4d64d; }
-    section { max-width: 1000px; margin: auto; padding: 40px 20px; text-align: center; }
-    footer { background: #3e554b; color: white; padding: 30px 20px; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      color: #333;
+    }
+    header {
+      background-color: #ffffff;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    header img {
+      max-height: 200px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #3e554b;
+    }
+    nav a {
+      color: #ffffff;
+      padding: 14px 20px;
+      text-decoration: none;
+      display: block;
+    }
+    nav a:hover {
+      background-color: #2e3f37;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #3e554b;
+    }
+    ul li::marker {
+      color: #f4d64d;
+    }
+    .featured-image {
+      width: 100%;
+      height: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #3e554b;
+      color: #ffffff;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      background-color: #3e554b;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    form button:hover {
+      background-color: #2e3f37;
+    }
   </style>
 </head>
 <body>
   <header>
-    <img src="rms-logo.png" alt="RMS Painting and Home Services Logo">
+    <img src="RMS Painting.svg" alt="RMS Painting and Home Services Logo" />
   </header>
   <nav>
     <a href="#home">Home</a>
@@ -25,20 +89,41 @@
     <a href="#services">Services</a>
     <a href="#contact">Contact</a>
   </nav>
-
   <section id="home">
     <h2>Welcome to RMS Painting and Home Services</h2>
-    <p>Your trusted experts for interior & exterior painting, and light home repairs.</p>
+    <p>Your trusted experts for interior & exterior painting, and light home repairs. Let us bring your vision to life!</p>
   </section>
-
   <section id="about">
     <h2>About Us</h2>
-    <p>At RMS Painting and Home Services, we specialize in transforming homes and businesses with exceptional craftsmanship and attention to detail. With 27 years of experience, owner Robert M. Stever (Robbie) is dedicated to delivering flawless painting services and expert light home repairs. We use only premium-quality paints and materials, ensuring beautiful, long-lasting results. Contact us today for a free consultation!</p>
+    <p>At RMS Painting and Home Services, we specialize in transforming homes and businesses with exceptional craftsmanship and attention to detail. With 27 years of experience, owner Robert M. Stever (Robbie) is dedicated to delivering flawless painting services and expert light home repairs. We use only premium-quality paints and materials, ensuring beautiful, long-lasting results that enhance the value and appeal of your space. Whether you're updating a single room or refreshing your entire property, you can trust RMS Painting and Home Services to bring your vision to life. Contact us today for a free consultation!</p>
   </section>
-
   <section id="services">
     <h2>Our Services</h2>
-    <ul style="text-align:left; display:inline-block;">
+    <img src="painting-example.jpg" alt="Painting Service Example" class="featured-image" />
+    <ul>
       <li>Interior Painting</li>
-      <
+      <li>Exterior Painting</li>
+      <li>Drywall Repair</li>
+      <li>Light Carpentry</li>
+      <li>Fixture Replacement</li>
+      <li>Custom Projects</li>
+    </ul>
+    <img src="handyman-example.jpg" alt="Handyman Service Example" class="featured-image" />
+    <img src="home-exterior.jpg" alt="Beautiful Home Exterior" class="featured-image" />
+    <img src="indoor-repair.jpg" alt="Indoor Handyman Work" class="featured-image" />
+  </section>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+  <footer>
+    <p>&copy; 2025 RMS Painting and Home Services. All rights reserved.</p>
+  </footer>
+</body>
+</html>
 
